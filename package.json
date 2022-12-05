@@ -1,0 +1,67 @@
+{
+  "name": "pkgname",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.12.0",
+  "description": "TODO",
+  "author": "jydin",
+  "license": "MIT",
+  "homepage": "https://github.com/jydin/pkgname#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jydin/pkgname.git"
+  },
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "",
+    "build": "unbuild",
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && npm publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.33.1",
+    "@types/node": "^18.11.10",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.29.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "unbuild": "^1.0.1",
+    "vite": "^3.2.5",
+    "vitest": "^0.25.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "pnpm exec lint",
+      "pnpm exec typecheck"
+    ]
+  }
+}

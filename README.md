@@ -1,1 +1,1 @@
-# starter-ts
+# pkgname
