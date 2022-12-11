@@ -1,1 +1,3 @@
-export const foo = 1
+const foo = 'b'
+
+console.log(foo)
