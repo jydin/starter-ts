@@ -5,6 +5,8 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.46.0
   '@typescript-eslint/parser': ^5.46.0
   bumpp: ^8.2.1
+  cz-git: ^1.4.1
+  czg: ^1.4.1
   eslint: ^8.29.0
   eslint-config-prettier: ^8.5.0
   eslint-define-config: ^1.12.0
@@ -26,6 +28,8 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.46.0_5mle7isnkfgjmrghnnczirv6iy
   '@typescript-eslint/parser': 5.46.0_ha6vam6werchizxrnqvarmz2zu
   bumpp: 8.2.1
+  cz-git: 1.4.1
+  czg: 1.4.1
   eslint: 8.29.0
   eslint-config-prettier: 8.5.0_eslint@8.29.0
   eslint-define-config: 1.12.0
@@ -959,6 +963,15 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: true
+
+  /cz-git/1.4.1:
+    resolution: {integrity: sha512-EOtuitcnfxde8t3NNTKh2YxEJhLXGiVlKSVaZipK3+DVo135rEUifAfqxkslM66Nf6ZO7a+3JR+XAOLhMXUAjQ==}
+    dev: true
+
+  /czg/1.4.1:
+    resolution: {integrity: sha512-ZjK46yrHgRbypfKAzv8D/UIWiz3BgGfO0cSPAGpk4VO9FmJ3tqaLqelrNyiVjHqOyg1dOi8hoxBHdrdvwa1eaQ==}
+    hasBin: true
     dev: true
 
   /debug/2.6.9:
