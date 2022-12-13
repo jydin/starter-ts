@@ -4,13 +4,9 @@ module.exports = {
     // @see: https://commitlint.js.org/#/reference-rules
   },
   prompt: {
-    useEmoji: true,
-    emojiAlign: 'center',
     scopes: [],
-    allowCustomScopes: true,
+    allowCustomScopes: false,
     allowEmptyScopes: true,
-    customScopesAlign: 'bottom',
-    customScopesAlias: 'custom',
     issuePrefixes: [
       { value: 'closed', name: 'closed:   ISSUES has been processed' },
     ],
