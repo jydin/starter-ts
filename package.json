@@ -5,7 +5,7 @@
   "description": "TODO",
   "type": "module",
   "keywords": [],
-  "homepage": "https://github.com/jydin/pkgname#readme",
+  "homepage": "https://github.com/iamdin/pkgname#readme",
   "license": "MIT",
   "author": "iamdin",
   "files": [
@@ -35,13 +35,13 @@
   },
   "scripts": {
     "cz": "czg",
+    "test": "vitest",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
     "dev": "",
-    "test": "vitest",
     "build": "unbuild",
     "format": "prettier --write --cache .",
-    "lint": "eslint . --ext .js,.ts,.md,.json --cache",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",
     "typecheck": "tsc --noEmit",
     "release": "bumpp && npm publish"
@@ -76,9 +76,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "pnpm exec lint",
-      "pnpm exec typecheck"
+    "*.{js,jsx,ts,tsx,vue,json,md}": [
+      "eslint --fix"
     ]
   }
 }

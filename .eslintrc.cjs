@@ -24,6 +24,10 @@ module.exports = defineConfig({
   },
   overrides: [
     {
+      files: ['*.json', '*.json5', '*.jsonc'],
+      parser: 'jsonc-eslint-parser',
+    },
+    {
       files: ['*.cjs'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
