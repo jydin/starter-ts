@@ -68,7 +68,7 @@
     "typescript": "^4.9.4",
     "unbuild": "^1.0.1",
     "vite": "^3.2.5",
-    "vitest": "^0.27.0"
+    "vitest": "^0.34.0"
   },
   "config": {
     "commitizen": {
