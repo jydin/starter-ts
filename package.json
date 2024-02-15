@@ -1,7 +1,7 @@
 {
   "name": "pkgname",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.12.0",
+  "packageManager": "pnpm@7.33.7",
   "description": "TODO",
   "type": "module",
   "keywords": [],
