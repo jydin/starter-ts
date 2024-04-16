@@ -47,7 +47,7 @@
     "release": "bumpp && npm publish"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.3.0",
+    "@commitlint/cli": "^19.0.0",
     "@types/node": "^18.11.10",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
